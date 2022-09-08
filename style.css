@@ -1,0 +1,418 @@
+:root {
+  --primary-color: blueviolet;
+  --primary-color-hover: rgb(155, 122, 185);
+  --secondary-color: linear-gradient(red, orange);
+  --secondary-color-hover: linear-gradient(orange, red);
+  --white-color: #ccc;
+  --max-width: 1024px; 
+  --background-color: black;
+  --btn-pri-bg-color: black;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: var(--background-color);
+  color: var(--white-color);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  padding: 10px;
+  width: 8rem;
+  border-radius: 30px;
+  font-size: 16px;
+  color: white;
+}
+
+#navbar {
+  display: grid;
+  grid-template-columns: 6fr 4fr 2fr;
+  padding-top: 20px; 
+}
+
+#navbar #logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#navbar #logo img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+#navbar ul li {
+  list-style: none;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+#navbar ul li a:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+#navbar ul li a.active {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: var(--btn-pri-bg-color);
+  align-items: center;
+  border: 1px solid white;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+#section-1 {
+  display: flex;
+  margin-top: 120px;
+  gap: 10rem;
+  width: var(--max-width);
+  height: 100vh;
+}
+
+#section-1 .sec1-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  max-width: 50%;
+}
+
+#section-1 .sec1-content h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+#section-1 .sec1-content h1 span {
+  color: var(--primary-color);
+}
+
+#section-1 .sec1-content h3 {
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+
+.btn-secondary {
+  background: var(--primary-color);
+  width: 50%;
+}
+
+.btn-secondary:hover {
+  cursor: pointer;
+  background: var(--btn-pri-bg-color);
+  border: 1px solid white;
+}
+
+.sec1-images img {
+  width: 200px;  
+  border-radius: 10px;
+}
+
+.sec1-images .img-1 {
+  position: relative;
+  left: 5rem;
+  top: 1rem;
+}
+
+.sec1-images .img-2 {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: relative;
+  top: 10rem;
+}
+
+.sec1-images .img-3 {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  position: relative;
+  top: -24rem;
+  left: 205px;
+} 
+
+.sec1-images .img-4 {
+  position: relative;
+  top: -286px;
+  z-index: -10;
+  left: 130px;
+}
+
+/* Design page */
+
+#section-a {
+  margin: 80px 0;
+  text-align: center;
+}
+
+#section-a h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#section-a h1 span {
+  color: var(--primary-color);
+}
+
+#section-a h3 {
+  font-size: 30px;
+}
+
+.section-b ul {
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid var(--primary-color);
+  border-bottom-width: ;
+  padding-bottom: 20px;
+}
+
+.section-b ul li a:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color); 
+  padding-bottom: 10px;
+}
+
+.section-b ul li a.active {
+  cursor: pointer;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color); 
+  padding-bottom: 10px;
+}
+
+/* Babbar Riga Section */
+
+#b-riga {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+#b-riga .design {
+  margin-bottom: 50px;
+}
+
+#b-riga img {
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#b-riga p {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#b-riga h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#b-riga .btn-primary {
+  width: 50%;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 3fr 6fr 2fr;
+  height: 20vh;
+  width: 100%;
+  border-top: 1px solid var(--primary-color);
+  padding-top: 10px;
+}
+
+footer img {
+  width: 90px;
+}
+
+#footer-content {
+  display: flex;
+  gap: 100px;
+}
+
+.footer-content div {
+  width: 100%;
+}
+
+.footer-content div h3 {
+  margin-bottom: 10px;
+}
+
+.footer-content div p {
+  line-height: 1.6;
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 10px;
+  margin-left: 50px;
+  padding-top: 67px;
+}
+
+.footer-content div a {
+  color: var(--white-color);
+}
+
+.footer-content div a:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.footer-social .fab {
+  color: var(--white-color);
+}
+
+.footer-social .fab:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+/* About Page */
+
+#main-about {
+  display: flex;
+  margin-top: 70px;
+  gap: 40px;
+  border: 1px solid var(--primary-color);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#main-about .about-img img {
+  width: 300px;
+  height: 420px;
+  border-radius: 5px;
+}
+
+#main-about .about-img h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+#main-about .about-img p {
+  font-size: 20px;
+}
+
+#main-about .about-img h3, #main-about .about-img p {
+  text-align: center;
+}
+
+#main-about .about-content h1 {
+  font-size: 45px;
+  margin-top: 10px;
+  margin-bottom: 21px;
+}
+
+#main-about .about-content :nth-child(2) {
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+#main-about .about-content :nth-child(3) {
+  font-size: 25px;
+  margin-bottom: 21px;
+}
+
+#main-about .about-content :nth-child(4) {
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+#main-about .about-content :nth-child(5), #main-about .about-content :nth-child(6) {
+ font-size: 20px;
+ font-weight: 600;
+}
+
+#form {
+  background-color: #ccc;
+  width: 500px;
+  margin-top: 50px;
+  padding: 20px 45px;
+  border-radius: 5px;
+}
+
+#form h1 {
+  color: var(--background-color);
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#form label {
+  color: var(--background-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#form div {
+  padding: 10px 0;
+}
+
+#form input, #form textarea {
+  margin: 10px 0;
+}
+
+#form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none; 
+}
+
+#form .name .name-1 {
+  margin-right: 10px;
+}
+
+#form .btn-form {
+  background-color: var(--background-color);
+  color: var(--white-color);
+}
+
+#form .btn-form:hover {
+  cursor: pointer;
+  background-color: var(--white-color);
+  color: var(--background-color);
+}
+
+#form .flex {
+  display: flex;
+  gap: 15px;
+}
